@@ -1,0 +1,117 @@
+html, body{
+    Font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.intro{
+    background-color: hsl(356, 100%, 66%); 
+    border-bottom-left-radius: 100px; 
+    min-height:70vh;
+}
+
+@media screen and (min-width:375px) {
+    /* .intro{
+        min-height: 80vh;
+    } */
+        .introtext {
+        font-size: 39px;
+    }
+    .phonepack {
+        height: auto;
+    }
+}
+.phonepack {
+    border-bottom-left-radius: 80px; 
+    border-top-right-radius: 70px;
+    margin-top: 180px;
+    height: 350px;
+}
+
+@media screen and (min-width:375px) {
+   
+    .phonepack {
+        height: auto;
+    }
+}
+
+.whitetext {
+    color: hsl(0, 0%, 100%);
+}
+
+.redtext {
+    color: hsl(356, 100%, 66%);
+}
+
+.darkblue {
+    color: hsl(208, 49%, 24%);
+}
+
+.darkgrayblue {
+    color: hsl(237, 17%, 21%);
+}
+
+.bggrayblue{
+    background-color: hsl(237, 23%, 32%);
+}
+
+.overpass {
+    font-family: 'Overpass', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif
+}
+
+.footer {
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(240, 2%, 79%);
+    border-top-right-radius: 100px; 
+}
+
+ul a:hover{
+    border-bottom: 2px solid white;
+}
+
+ul a:active{
+    border-bottom: 2px solid white;
+}
+
+.btn1:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn1:active {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn2:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);
+}
+
+.dropdown-content {
+    color: hsl(240, 10%, 16%);
+    width: 200px;
+}
+
+.dropdown-content a:hover {
+    font-weight: bold;
+}
+
+.dropbtn:hover{
+    border-bottom: 2px solid white;
+}
+
+.dropbtn:active{
+    border-bottom: 2px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
