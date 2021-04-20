@@ -81,15 +81,15 @@
         </div>  
 
 
-        <div class="lg:hidden block relative ">
-          <img src="./images/icon-hamburger.svg" alt="">
-        </div>
+        <button class="focus:outline-none cursor-pointer lg:hidden block relative">
+          <img id="navOpen" src="./images/icon-hamburger.svg" alt="" onclick="toggleNav()">
+        </button>
       </div>
     </div>
       
     
 
-      <div class="mx-auto py-40 whitetext overpass">
+      <div class="mx-auto lg:py-40 py-40 whitetext overpass">
         <p class="introtext lg:w-full mx-auto w-11/12 font-bold text-5xl text-center">A modern publishing platform</p>
         <p class="lg:w-full mx-auto w-9/12 mt-5 mb-10 text-center">Grow your audience and build your online brand</p>
 
@@ -107,7 +107,7 @@
 
 
 
-  <h1 class="mt-32 overpass darkblue font-bold text-3xl text-center"> 
+  <h1 class="mt-20 overpass darkblue font-bold text-3xl text-center"> 
     Designed for the future</h1>
 
 
@@ -161,8 +161,8 @@
 
     
 
-      <div class="md:w-1/2 w-8/12 z-10 xl:-ml-60 md:-ml-40 md:mt-14 mt-16 md:text-left text-center">
-        <h1 class="my-5 overpass font-bold text-3xl"> 
+      <div class="md:w-7/12 sm:w-8/12 w-11/12 z-10 xl:-ml-60 md:-ml-40 md:mt-14 sm:mt-16 md:text-left text-center">
+        <h1 class="mb-5 md:mt-5 mt-20 overpass font-bold text-4xl"> 
           State of the Art Infrastructure</h1>
         <p class="overpass">
           With reliability and speed in mind, worldwide data centers provide the backbone 
@@ -176,7 +176,7 @@
   </div>
  
 
-  <div class="md:w-1/3 w-1/2 z-10 relative md:-top-80 -top-96 md:mx-20 mx-auto md:-mt-40 -mt-48">
+  <div class="md:w-1/3 w-1/2 z-10 relative md:-top-80 -top-96 md:mx-20 mx-auto md:-mt-40 sm:-mt-80 -mt-40">
     <img class="" src="./images/illustration-phones.svg" alt="">
   </div>
 
@@ -188,17 +188,17 @@
 
 
 
-    <div class="w-full xl:pr-48 pr-60 lg:-mt-40">
+    <div class="w-full xl:pr-48  lg:pr-60 md:pr-20 pr-0 md:-mt-10 sm:-mt-40 -mt-0">
     
       <div class="flex md:flex-row flex-col items-center">
 
-        <div class="relative left-0 overflow-x-hidden">
-          <img class="-ml-44" src="./images/illustration-laptop-desktop.svg" alt="">
+        <div class="md:w-1/2 relative md:left-0 md:overflow-x-hidden">
+          <img class="lg:-ml-44 md:-ml-24" src="./images/illustration-laptop-desktop.svg" alt="">
         </div>
         
       
-        <div class="w-1/2 flex flex-col items-start">
-          <div>
+        <div class="lg:w-1/2 md:w-7/12 w-8/12 flex flex-col items-start">
+          <div class="md:text-left text-center">
             <h1 class="my-5 overpass darkblue font-bold text-xl"> 
               Free, open, simple</h1>
             <p class="overpass darkgrayblue">
@@ -210,7 +210,7 @@
             </p>
           </div>
   
-          <div>
+          <div class="md:text-left text-center">
             <h1 class="my-5 overpass darkblue font-bold text-xl"> 
               Powerful tooling</h1>
             <p class="overpass darkgrayblue">
@@ -283,5 +283,87 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+
+
+
+  <div id="mySidenav" class="sidenav bg-white hidden shadow overflow-x-hidden fixed py-10 z-50 top-20 left-5 right-5 w-11/12 h-screen rounded" style="color:  hsl(207, 13%, 34%);">
+    <div class="flex flex-col items-center gap-5 ubuntu">
+      <div class="dropdown overflow-hidden flex flex-col items-center relative">
+        <button class="dropbtn focus:outline-none flex items-center">Product<img class="ml-2" src="./images/icon-arrow-dark.svg" alt=""></button>
+        <div class="dropdown-content bg-gray-300 hidden flex flex-col items-center gap-1 p-5 rounded">
+          <a class="block p-1" href="">Overview</a>
+          <a class="block p-1" href="">Pricing</a>
+          <a class="block p-1" href="">Marketplace</a>
+          <a class="block p-1" href="">Features</a>
+          <a class="block p-1" href="">Integrations</a>
+        </div>
+      </div>
+      
+      <div class="dropdown overflow-hidden flex flex-col items-center relative">
+        <button class="dropbtn focus:outline-none flex items-center">Company<img class="ml-2" src="./images/icon-arrow-dark.svg" alt=""></button>
+        <div class="dropdown-content bg-gray-300 hidden flex flex-col items-center gap-1 p-5 bg-white rounded">
+          <a class="block p-1" href="">About</a>
+          <a class="block p-1" href="">Team</a>
+          <a class="block p-1" href="">Blog</a>
+          <a class="block p-1" href="">Careers</a>
+        </div>
+      </div>
+      
+      <div class="dropdown overflow-hidden flex flex-col items-center relative">
+        <button class="dropbtn focus:outline-none flex items-center">Connect<img class="ml-2" src="./images/icon-arrow-dark.svg" alt=""></button>
+        <div class="dropdown-content bg-gray-300 hidden flex flex-col items-center gap-1 p-5 rounded">
+          <a class="block p-1" href="">Contact</a>
+          <a class="block p-1" href="">Newsletter</a>
+          <a class="block p-1" href="">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col items-center gap-5 ubuntu mt-5 mx-7 border-t">
+      <button class="focus:outline-none px-7 py-2 font-medium">
+        Login</button>
+
+      <button class="btn1 focus:outline-none redtext px-7 py-2 bg-white rounded-full font-medium">
+        SignUp</button>
+    </div>  
+
+  </div>
+
+
+
+
+
+
+
+  <script>
+
+        // function openNav() {
+        //   document.getElementById("mySidenav").style.display = 'block';
+        //   document.getElementById("navOpen").src = './images/icon-close.svg'
+        // }
+
+        // const good = document.getElementById("navOpen").src = './images/icon-close.svg'
+        // good.addEventListener('click', closeNav)
+        // function closeNav() {
+        //   document.getElementById("mySidenav").style.display = 'none';
+        // }
+
+
+        function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.display === 'block') {
+        element.style.display = 'none';
+        document.getElementById("navOpen").src = './images/icon-hamburger.svg';
+    } else {
+        element.style.display = 'block';
+        document.getElementById("navOpen").src = './images/icon-close.svg';
+     }
+}
+
+   
+
+    </script>
 </body>
 </html>

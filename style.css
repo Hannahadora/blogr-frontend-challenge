@@ -111,7 +111,18 @@ ul a:active{
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
   }
 
+.dropdown:hover img{
+    -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
 
+
+@media screen and (max-width:360px) {
+   
+    .phonepack {
+        height: auto;
+    }
+}

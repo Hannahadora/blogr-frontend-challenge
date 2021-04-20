@@ -19,7 +19,7 @@ The designs were created to the following widths:
 
 - White (text): hsl(0, 0%, 100%)
 - Grayish blue (footer text): hsl(240, 2%, 79%)
-- Very dark grayish blue (body copy): hsl(207, 13%, 34%)
+- Very dark grayish blue (body copy):
 - Very dark black blue (footer background): hsl(240, 10%, 16%)
 
 ### Gradient
